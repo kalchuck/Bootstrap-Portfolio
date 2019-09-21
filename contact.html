@@ -3,55 +3,76 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>CSS Stylesheets with Relative Paths</title>
-
-    <link rel="stylesheet" type="text/css" href="style.css">
-
+    <title>CSS Stylesheets with bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.cs" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styl.cs">
 </head>
 
 <body>
-
-    <header>
-            <div class="heading">
-               <h1>Kalyan Gadda</h1>
-            </div>
-            
-                <nav>
-                    <a href="index.html">About</a> |
-                    <a href="Portfolio.html">Portfolio</a> |
-                    <a href="contact.html">Conatct</a> |
-                </nav>
-    </header>
-
     <div class="container">
-
         
-        <h2>Contact</h2>
-        <div class="hline">
+        <div class="row">
+            
+            <div class="col-sm-6">
+               <header>                
+                <h1>Kalyan Gadda</h1>                
+               </header>
+            </div> 
+                
+                <div class="col-sm-6" id="navbarNav">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="Portfolio.html">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                    </nav>
+                </div>  
         </div>
-
-        <div class="contact-bio">
-
-           <form>
-                Name:<br>
-                <input type="text" name="name">
-                <br> 
-                Email:<br>
-                <input type="Email" name="Email">
-                <br> Message:
-                <br>
-                <textarea maxlength="500">
-                Enter text here...
-                </textarea>
-                <br>
-            </form>
-            <button type="button">Submit</button>
-
+       
+        <div class="row">  
+            <h2>About Me</h2>
         </div>
-     
-</div>
+        
+        <div class="hline"></div>
 
-<footer>Copyright</footer>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="dropdown-menu">
+                <form class="px-4 py-3">
+                        <div class="form-group">
+                            <label for="exampleDropdownFormEmail1">Name</label>
+                            <input type="Name" class="form-control" id="exampleDropdownFormEmail1" placeholder="John Smith">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                                <label for="exampleDropdownFormEmail1">Email</label>
+                                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="exampleDropdownFormPassword1">Message</label>
+                            <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="">
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+   
+   
+   
+        
+        
+        <!-- <footer>Copyright</footer> -->
+        
+    </div>
 
 </body>
 
